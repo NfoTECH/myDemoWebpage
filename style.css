@@ -1,0 +1,113 @@
+body {
+  font-family: "PT Sans", sans-serif; /*changes the font style of the webpage*/
+  background-color: #252529; /*hex value of a greyish black color using the html color code*/
+  margin: 0; /*closes all border margin*/
+  color: #ffffff; /*the hex value off a total white color*/
+  line-height: 1.6; /*gives line spacing between each text*/
+}
+
+a {
+  text-decoration: none; /*removes all text styling including underline*/
+  color: #cccccc; /*hex value of a greyish white color using the html color code*/
+}
+
+#showcase {
+  /*showcase is the id of the first div and it needs styling*/
+  margin: 0;
+  padding: 0;
+  background: url("AllSports.bmp") no-repeat center/cover;
+  width: 100%;
+  height: 100vh; /*viewport-height*/
+  position: relative;
+  overflow-y: hidden;
+}
+
+#showcase .container {
+  margin-top: 25vh;
+}
+
+#showcase h1 {
+  font-size: 4rem; /*rem is root elements for font sizes*/
+  margin-bottom: 0;
+  color: lightgrey;
+}
+
+#showcase h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+nav {
+  /*this style is for the navigation border*/
+  height: 40px;
+  width: 100%;
+  background-color: #333333;
+  color: rgb(51, 34, 34);
+  position: fixed;
+}
+
+nav ul {
+  /*this is for navigation items*/
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline; /*all navigation links in one line*/
+  float: left; /*aligns text to the left without spacing*/
+}
+
+nav a {
+  display: inline-block; /*ensuring the anchor tags are in horizontal and block form*/
+  width: 100px; /*this width created the spacings in the header containers*/
+  /*the width and the block created the seperations in the header listed items*/
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 0; /*2 values means top-bottom = 10px; and left-right = 0*/
+  color: #eee;
+}
+
+nav li:hover {
+  background-color: #444;
+}
+
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto; /*0 means 0px and auto means automargin (properly centralizes the texts)*/
+  padding: 0 3rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+
+footer .footer-cols {
+  display: grid; /*divides the footer into rows and colomn*/
+  grid-gap: 20px;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /*4 means 4repeats and 1fr means 1 fractional unit*/
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+footer .footer-cols ul {
+  list-style: none; /*removes styling in the lists like numbers or bullets*/
+}
+
+footer .footer-cols ul li:first-child {
+  /*first-child is the first line in the column*/
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem; /*this creates space btw the firstchild and the other children*/
+  border-bottom: #444 solid 1px; /*creates tthe horizontal line bottom of the first child*/
+  margin-bottom: 1rem;
+}
+
+footer .footer-bottom {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
